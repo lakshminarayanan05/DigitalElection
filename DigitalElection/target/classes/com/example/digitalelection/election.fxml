@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Arc?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Ellipse?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="619.0" prefWidth="493.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.digitalelection.VotingMachine">
+    <Line endX="293.0" endY="-20.0" layoutX="200.0" layoutY="91.0" startX="-200.0" startY="-20.0" />
+    <Line endX="-10.0" endY="435.0" layoutX="124.0" layoutY="184.0" startX="-10.0" startY="-112.5" />
+    <Line endX="15.5" endY="471.5" layoutX="378.0" layoutY="157.0" startX="15.5" startY="-86.5" />
+    <Line endX="266.0" endY="-26.0" layoutX="228.0" layoutY="159.0" startX="-230.0" startY="-26.0" />
+    <Line endX="266.0" endY="-16.0" layoutX="225.0" layoutY="199.0" startX="-230.0" startY="-16.0" />
+    <Line endX="266.0" endY="-36.0" layoutX="228.0" layoutY="273.0" startX="-230.0" startY="-36.0" />
+    <Line endX="261.0" endY="-64.0" layoutX="232.0" layoutY="350.0" startX="-232.0" startY="-64.0" />
+    <Line endX="268.0" endY="-85.0" layoutX="225.0" layoutY="421.0" startX="-225.0" startY="-85.0" />
+    <Line endX="268.0" endY="-97.0" layoutX="225.0" layoutY="481.0" startX="-225.0" startY="-97.0" />
+    <Line endX="214.0" endY="-101.0" layoutX="279.0" layoutY="544.0" startX="-279.0" startY="-101.0" />
+    <Line endX="256.0" endY="-18.0" layoutX="237.0" layoutY="513.0" startX="-237.0" startY="-18.0" />
+    <Line endX="271.0" endY="-9.0" layoutX="222.0" layoutY="558.0" startX="-219.5" startY="-9.0" />
+    <Text fill="RED" layoutX="46.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Electronic Voting Machine" wrappingWidth="402.13671875">
+        <font>
+            <Font name="Verdana" size="31.0" />
+        </font>
+    </Text>
+    <Text fill="#0f45b9" layoutX="14.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SYMBOLS" textAlignment="CENTER">
+        <font>
+          <Font name="Georgia" size="19.0" />
+        </font>
+    </Text>
+    <Text fill="#0f45b9" layoutX="208.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PARTIES" textAlignment="CENTER">
+        <font>
+          <Font name="Georgia" size="19.0" />
+        </font>
+    </Text>
+    <Circle fill="#d64545" layoutX="162.0" layoutY="96.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+    <Circle layoutX="341.0" layoutY="96.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+    <Text fill="#eb1a1adc" layoutX="214.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PARTY 1" textAlignment="CENTER">
+        <font>
+          <Font name="System Bold" size="17.0" />
+        </font>
+    </Text>
+    <Text fill="RED" layoutX="214.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PARTY 2" textAlignment="CENTER">
+        <font>
+          <Font name="System Bold" size="17.0" />
+        </font>
+    </Text>
+    <Text fill="RED" layoutX="214.0" layoutY="269.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PARTY 3" textAlignment="CENTER">
+        <font>
+          <Font name="System Bold" size="17.0" />
+        </font>
+    </Text>
+    <Text fill="RED" layoutX="214.0" layoutY="314.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PARTY 4" textAlignment="CENTER">
+        <font>
+          <Font name="System Bold" size="17.0" />
+        </font>
+    </Text>
+    <Text fill="RED" layoutX="214.0" layoutY="363.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PARTY 5" textAlignment="CENTER">
+        <font>
+          <Font name="System Bold" size="17.0" />
+        </font>
+    </Text>
+    <Button fx:id="party1" layoutX="422.0" layoutY="142.0" mnemonicParsing="false" onAction="#party1" text="Vote" textAlignment="CENTER" />
+
+    <Button fx:id="party2" layoutX="422.0" layoutY="194.0" mnemonicParsing="false" onAction="#party2" text="Vote" />
+    <Button fx:id="party3" layoutX="422.0" layoutY="249.0" mnemonicParsing="false" onAction="#party3" text="Vote" />
+    <Button fx:id="party4" layoutX="422.0" layoutY="297.0" mnemonicParsing="false" onAction="#party4" text="Vote" />
+    <Button fx:id="party5" layoutX="422.0" layoutY="343.0" mnemonicParsing="false" onAction="#party5" text="Vote" />
+    <Arc fill="#d38831" layoutX="62.0" layoutY="162.0" length="270.0" radiusX="20.0" radiusY="12.0" startAngle="45.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
+    <Circle fill="#ff1f1f" layoutX="42.0" layoutY="310.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+    <Circle layoutX="76.0" layoutY="310.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+    <Ellipse fill="#c2f51a" layoutX="58.0" layoutY="207.0" radiusX="34.0" radiusY="11.0" stroke="BLACK" strokeType="INSIDE" />
+    <Polygon fill="#ff1fb4" layoutX="70.0" layoutY="265.0" points="-26.5, 11.0, 14.5, 3.0, -26.5, -18.0" stroke="BLACK" strokeType="INSIDE" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00fffb" height="22.0" layoutX="40.0" layoutY="348.0" stroke="BLACK" strokeType="INSIDE" width="41.0" />
+</AnchorPane>
